@@ -1,3 +1,5 @@
+find_package(Vulkan REQUIRED)
+
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
@@ -29,3 +31,5 @@ target_sources(imgui PRIVATE
     imgui/backends/imgui_impl_vulkan.cpp
     imgui/backends/imgui_impl_glfw.cpp
 )
+
+target_link_libraries(imgui PUBLIC Vulkan::Vulkan glfw)

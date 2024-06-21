@@ -5,3 +5,7 @@ CMakeFiles
 Makefile
 *.a
 *.so
+build
+*.vcxproj
+*.filters
+*.sln
