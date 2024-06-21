@@ -9,3 +9,5 @@ build
 *.vcxproj
 *.filters
 *.sln
+.cache
+compile_commands.json
